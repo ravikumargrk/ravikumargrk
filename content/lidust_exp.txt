@@ -1,0 +1,5 @@
+\newline | Led [0 to 1] development of prototype: "Particulate matter level measurement sensor for industrial flue gas stacks"
+\newline | Helped client meet compliance particulate emmission level of 30 units from 100 units.
+\newline | Established test set up for benchmarking instrument accuracy and precision. %<!-- add metrics as to how accurate your sensor can measure -->
+\newline | Defined technical specifications for the components required to build the product, in accordance with the business requirements.
+\newline | Developed a product roadmap that aligns with overall business objectives, as well as defining key milestones and deliverables.

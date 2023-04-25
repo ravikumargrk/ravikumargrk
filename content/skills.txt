@@ -1,0 +1,8 @@
+\fbox{Technical Product management}
+\fbox{Product development \& Leadership}
+\fbox{Product Strategy \& roadmap}
+\fbox{Agile Methodologies}
+\fbox{Product Ownership}
+\fbox{Data Analysis in Excel}
+\fbox{APIs}
+\fbox{Python \& Machine learning}

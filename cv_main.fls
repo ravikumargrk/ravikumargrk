@@ -107,10 +107,19 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /workspaces/ravikumargrk/content/tmx_exp.txt
+INPUT /workspaces/ravikumargrk/content/tmx_exp.txt
+INPUT /workspaces/ravikumargrk/content/lidust_exp.txt
+INPUT /workspaces/ravikumargrk/content/lidust_exp.txt
+INPUT /workspaces/ravikumargrk/content/education.txt
+INPUT /workspaces/ravikumargrk/content/education.txt
+INPUT /workspaces/ravikumargrk/content/skills.txt
+INPUT /workspaces/ravikumargrk/content/skills.txt
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /workspaces/ravikumargrk/cv_main.aux
 INPUT /workspaces/ravikumargrk/cv_main.out
@@ -121,3 +130,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
