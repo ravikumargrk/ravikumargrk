@@ -1,207 +1,162 @@
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
-% (c) 2008-2015 Nathaniel Johnston <nathaniel@njohnston.ca> http://www.njohnston.ca
-% %
-%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
-
-\documentclass[a4paper, 10pt]{article}
-\newlength{\outerbordwidth}
-\pagestyle{empty}
-\raggedbottom
-\raggedright
-\usepackage{hyperref}
-\usepackage[svgnames]{xcolor}
-\usepackage{framed}
-\usepackage{tocloft}
-\usepackage{graphicx}
-
-% The following two lines are needed to fix a MacTex compatibility issue
-% Thanks to Tony Blake for finding this fix!
-\usepackage{etoolbox}
-\robustify\cftdotfill
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
 
 
-%-----------------------------------------------------------
-%Edit these values as you see fit
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
 
-\setlength{\outerbordwidth}{0pt}  % Width of border outside of title bars
-\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
-\definecolor{shadecolorB}{gray}{1}  % Inner background color of title bars
+\usepackage{multicol}
+\usepackage{verbatim}
+% Set the page margins.
+\usepackage[a4paper,margin=0.5in]{geometry}
 
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
 
-%-----------------------------------------------------------
-%Margin setup
-
-\setlength{\evensidemargin}{1.75cm}
-\setlength{\headheight}{0in}
-\setlength{\headsep}{0in}
-\setlength{\oddsidemargin}{-1.75cm}
-\setlength{\paperheight}{29.7cm}
-\setlength{\paperwidth}{21cm}
-\setlength{\tabcolsep}{0cm}
-\setlength{\textheight}{28cm}
-\setlength{\textwidth}{20cm}
-\setlength{\topmargin}{-1.75cm}
-\setlength{\topskip}{0cm}
-\setlength{\voffset}{0.1cm}
+% Makes resume-specific commands available.
+\usepackage{resume}
 
 
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{\vspace{8pt}
-  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
-    \begin{shaded}
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
-    \end{shaded}
-  }\vspace{-5pt}
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Ravi Kumar Gorre}{}{}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:job.grk@outlook.com}{job.grk@outlook.com}\sbull
+\href{tel:+917981600981}{+91 7 981 600 981}\sbull
+\href{http://www.linkedin.com/in/ravikumargorre}{www.linkedin.com/in/ravikumargorre}
+\\
+Pune, India
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+% \roottitle{Summary}  % a root section title
+
+% \vspace{-1.3em}  % some vertical spacing
+% \begin{multicols}{2}  % open a multicolumn environment
+% 	\noindent \emph{Creative geek with roots in the open source movement, an entrepreneurial mindset and a passion for delivering value by developing maintainable software.}
+% 	% \\
+% 	% \\
+% 	At the age of seven (1989) Cies wrote his first lines of code in a \acr{LOGO}-like language on an \acr{MSX} (pre-\acr{PC}).  Two years later he attended a conference on an emerging new technology, the Internet, at the Erasmus University from which he would graduate 16 years later.
+
+% 	After being introduced to the open source movement in 1997, he taught himself a variety of skills including system administration and programming (Bash, Python, Ruby \& \CPP).  By 2002 he got his pet project \acr{KT}urtle ---a zero-entry-barrier programming environment--- included into \acr{KDE}'s \emph{edu} module, and thereby almost every Linux distribution.
+
+% 	From 2003 to 2007 he studied at the Erasmus University Rotterdam and graduated in \emph{Business and Computer Science} (one curriculum).  After graduation he travelled Europe and Asia during a two year sabbatical, on which he ``hustled'' several IT gigs (see experiences below) to extend the journey.
+% \end{multicols}
+
+\roottitle{Skills}
+\vspace{-1.25em}
+\begin{multicols}{3}
+	\verbatiminput{content_tex/skills.txt}
+\end{multicols}
+\spacedhrule{-0.1em}{-0.4em}
+
+% \spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+% limit bullet point to 107 characters
+\headedsection  % sets the header for the section and includes any subsections
+{\href{https://www.thermaxglobal.com/}{Thermax Ltd}}
+{\textsc{Pune, India}} {%
+	\headedsubsection
+	{SME/Product}
+	{May \apo21 -- present}
+	{
+		\bodytext{
+			\input{markdown/tmx_exp_metrics.txt}
+			% \newline\textbf{Additional Product Initiatives Ownership / Responsibility:}\newline
+			% \input{markdown/tmx_exp_additional.txt}
+			% \newline\textbf{Secured:}%\newline
+			% \input{markdown/tmx_exp_award.txt}
+		}
+	}
+	\headedsubsection
+	{Additional Product Ownership Initiatives / Responsibility:}
+	{}
+	{
+		\bodytext{
+			% \input{markdown/tmx_exp_metrics.txt}
+			% \newline\textbf{Additional Product Initiatives Ownership / Responsibility:}\newline
+			\input{markdown/tmx_exp_additional.txt}
+			\newline\textbf{Secured : }%\newline
+			\input{markdown/tmx_exp_award.txt}
+		}
+	}
 }
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{19cm}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & \textbf{#2} \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
 
-% \newcommand{\ressubsubheading}[2]{
-% \begin{tabular*}{16cm}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-% 		\textit{#1} & \textit{#2} \\
-% \end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
-\newcommand\tab[1][1cm]{\hspace*{#1}}
+\headedsection  % sets the header for a subsection and contains usually body text
+{Energy and Emission Laboraties}
+{\textsc{Chennai, India}} {%
+	\headedsubsection
+	{Technical Lead}
+	{Jun \apo19 -- Dec \apo20}
+	{\bodytext{\input{markdown/iitm_exp.txt}}}
+}
 
-\begin{document}
+\vspace{1em}
+\spacedhrule{-0.2em}{-0.4em}
 
-\title{My Article Title}
-\author{\Large Ravi Kumar Gorre \\ \smallskip %
-	\emph{Address}: Pune, India \\ \smallskip
-	\emph{Homepage}: \texttt{https://www.linkedin.com/in/ravikumargorre/}}
+\roottitle{Education}
 
-\begin{tabular*}{20cm}{l@{\extracolsep{\fill}}r}
-	\textbf{\Large Ravi Kumar Gorre} & \href{tel:+917981600981}{+91 7 981 600 981}\\
-	Subject matter expert for IIoT analytics product& \href{mailto:job.grk@outlook.com}{job.grk@outlook.com} \\
-	Thermax Ltd & \href{https://www.linkedin.com/in/ravikumargorre/}{\texttt{https://www.linkedin.com/in/ravikumargorre/}} \\
-\end{tabular*}
+\headedsection
+{\href{http://www.eur.nl/english}{Indian Institute of Technology, Madras}}
+{\textsc{Chennai, India}} {%
+	\headedsubsection
+	{Bachelor\'s degree in Mechanical Engineering}
+	{2015 -- 2019}
+	{\bodytext{\textbf{key courses}: \href{https://www.udemy.com/certificate/UC-4aa83664-cd41-4b8e-be7c-201c642d643d/}{Data Science}, Design and Optimisation of Energy Systems}}
+	\headedsubsection
+	{leadership Roles:}{}{
+		\newline Coordinator of Mechanica 2k18
+		\newline | Increased the number of participants by 30\% compared to last year. Responsible for organizing and conducting events managing about 100 Participants.
+	}
+	\headedsubsection
+	{Internship @ Daimler}{}{
+		\newline | Worked at a Diesel Engine Durability Test Setup to study various energy flows and losses.
+		\newline | Built dashboards in Power BI using data from sensors to display key performance indicators related to energy management, improving visibility and enabling data-driven decision making.
+	}
+}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \resheading{Career Objective}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{center}
-% \parbox{6.762in}{
-% 	I am passionate about contributing to the development of innovative solutions and achieving business success by working collaboratively with cross-functional teams.
-% 	I am seeking a position where I can leverage my expertise in data analytics to outline technical requirements based on business needs.  
-% }
-% \end{center}
+\spacedhrule{0.5em}{-0.4em}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Experience}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-	\item
-	      \ressubheading{Subject matter expert | IIoT analytics product}{May 2021 - Present}{Thermax Edge Live}{Pune}
-	      \newline
-	      \input{content_tex/tmx_exp.txt}
-	\item
-	      \ressubheading{Technical Lead | EnERG Labs}{Jun. 2019 - Dec. 2020}{Leading development at an IITM incubated startup}{Chennai}
-	      \newline
-	      \input{content_tex/lidust_exp.txt}
-\end{itemize}
+% \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+% {Technical expertise:}
+% {}
+
+% \vspace{0.5em}
+% \inlineheadsection
+% {Natural languages:}
+% {Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(limited working proficiency)}, French \emph{(elementary proficiency)} and Mandarin Chinese \emph{(beginner)}.}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Education}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
-	\item
-	      \ressubheading{Indian Institute of Technology, Madras}{2015 - 2019}{Mechanical Engineering | CGPA: 7.91}{B. Tech}
-	      \newline
-	      \input{content_tex/education.txt}
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \resheading{Intern}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{itemize}
-% \item 
-% 	\ressubheading{\href{https://drive.google.com/file/d/1baM279Qt0Br-YQtUwhHpO8Tc2-sb5d4u/view?usp=sharing}{Indian Institute of Technology Madras}}{Student}{Course Project : Measurement Instrumentation \& Control}{Jul. 2017 - Nov. 2017}
-% 	\begin{itemize}
-% 		\resitem{Self balancing - Dual propeller robot arm
-% 		\newline \tab Built a self-balancing, propeller-based arm that maintains angular orientation under various introduced instabilities using Arduino and simulation softwares like MATLAB Simulink accompanied with various control algorithms in the process.
-% 		%\newline \tab Project involved manufacturing the model equipping with accelerometers and motors, solving for expected PID control parameters in simulink and programming arduino to actuating motors accordingly with the input from sensors.
-% 		}
-% 	\end{itemize}
-% 	%%%%%%%%%%%%%%
-% 	\ressubsubheading{Course Project : Artificial Intelligence in Manufacturing}{Jan. 2019 - May 2019}
-% 	%%%%%%%%%%%%%%
-% 	\begin{itemize}
-% 		\resitem{ Spacial prediction of PM2.5 levels using neural network
-% 		\newline \tab A prescriptive neural network model for estimation particulate matter emissions using similar data at nearby locations.
-% 		\newline \tab The project demonstrates the energy savings possible by using Ai along with PM measurment equipement.
-% 		}
-% 	\end{itemize}
-% 	%%%%%%%%%%%%%%
-% 	\ressubsubheading{Course Project : Computational Heat and Fluid Flow}{Jan. 2019 - May 2019}
-% 	%%%%%%%%%%%%%%
-% 	\begin{itemize}
-% 		\resitem{Thermal computational Model of Raspberry Pi
-% 		\newline \tab A finite volume based, 2-Dimensional, unsteady computational model of a RPi PCB with time - varying heat sources that can plot 2D heatmaps at given timestamps and thereby studying the system's temperature response. }
-% 	\end{itemize}
-% 	%%%%%%%%%%%%%%
-% 	\ressubsubheading{Course Project : Design of Machine Elements}{Jul. 2017 - Nov 2017}
-% 	%%%%%%%%%%%%%%
-% 	\begin{itemize}
-% 		\resitem{ Walking beam Assistive Mechanism
-% 		\newline \tab Modified version of the Biped mechanism to make it simpler and easily integrable with the daily life
-% 		\newline \tab This project involved : Desigining the mechanism required for the objective, considering geometrical constraints assuming an average senior person using it. 
-% 		}
-% 	\end{itemize}
-% \item 
-% 	\ressubheading{\href{https://drive.google.com/file/d/1spFiDtFbS55FCTLhMx1sQPOBuvb_jdgU/view?usp=sharing}{Fluid Mechanics Block, IITM}}{Project Associate}{Wankel Steam Expander}{Jan. 2017 - Feb. 2017}
-% 	\begin{itemize}
-% 		\resitem{Analytical model of Wankel steam engine. This served as a link between geometry/size and power output of
-% 		engine}
-% 		\resitem{Data from this model is used for further understanding of
-% 		thermodynamics of engine and back-calculating design
-% 		parameters for engineering first prototype}
-% 	\end{itemize}
-% \item 
-% \ressubheading{Interning UG}{Daimler}{Energy assessment of diesel-engine durability-test facility}{Dec. 2018 - Jan. 2019}
-% \newline \newline This project involved estimation of various energy losses in the facility using sensor data and visualization of total energy flow in sankey charts. 
-% \begin{itemize}
-% 	\resitem{Study of assembly chain for diesel engine}
-% 	\resitem{Energy assessment of diesel engine, reporting of energy spent for engine durability test in sankey charts,
-% 	Performance comparison of diesel engine with heat-pump}
-% \end{itemize}
-% \item 
-% 	\ressubheading{\href{https://drive.google.com/file/d/1HvXBph3uKW2_xmt0rf3FeNXxDFszhOjC/view?usp=sharing}{Centre for Innovation}}{Project Member}{Certification of completion : WALL E}{Nov. 2016}
-% 	\begin{itemize}
-% 		\resitem{Project WALL-E is an effort to make a machine that replicates the
-% 		cleaning-bot in the movie "WALL-E". It uses Raspberry Pi V.2 board for
-% 		image processing, wireless communication, interactive control of
-% 		actuators.}
-% 	\end{itemize}
-
-% \end{itemize}
 
 
-% \pagebreak
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Skills}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{content_tex/skills.txt}
+% \roottitle{Interests}
 
-% \begin{itemize}
-% 	\item Technical Product management
-% 	\item 
+% \inlineheadsection
+% {Non-exhaustive and in alphabetical order:}
+% {art, Buddhism, cryptography, Go (board game), history, music, open source, philosophy, software engineering (methodologies), travel, typography (e.g.\ graphic design, \LaTeX), \acr{UI}/\acr{UX}-design and vegetarian/vegan cooking.}
 
-% \end{itemize}
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \resheading{Personal Details}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{itemize}
-% 	% \resitem{\textbf{DOB : } 02 May 1996}
-% 	\resitem{\textbf{Languages : } Hindi, Telugu and English all at full professional working proficiency }
-% 	\resitem{\textbf{Postal Address : } \href{https://goo.gl/maps/UU5t9kcwtPgM5gMv7}{Ganganagar, PCMC, Pune-411035} }
-% \end{itemize}
 
 \end{document}

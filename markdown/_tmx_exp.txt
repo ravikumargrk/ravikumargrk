@@ -1,0 +1,25 @@
+ | Played a key role as a Subject Matter Expert (SME), leading internal software team in the development of cutting|edge IIoT products.
+
+ | Successfully delivered new product features that resulted in a 50\% YoY increase in the number of customers, driving significant business growth and market expansion.
+
+ | Led [0 to 1] development of innovative digital twin functionality, that helps customer operate their energy|asset at optimum efficiency || A unique selling proposition for the product. 
+
+ | Revamping of the execution process through the implementation of Standard Operating Procedures (SOPs), resulting in a 75\% reduction in new user|asset onboarding time, improving overall team efficiency and productivity of execution.
+
+ | Oversaw the execution of projects, ensuring efficient and timely delivery of solutions to clients, while maintaining high|quality standards and customer satisfaction.
+
+ | Additional Product Initiatives Ownership / Responsibility:
+
+ | Launched varous new product features using agile methology and laid roadmap for development of a new offering (IIoT product for industrial thermal oil heaters).
+
+ | Composed technical requirements from understandings of user stories and feedback collected by interal operaton teams which led to new product features.  
+
+ | Documentation of product requirements, technical specifications, SOPs for executions and related knowledge.
+
+ | Collaborated with buissiness stake holders to ensure product alignment with buissiness requirements.
+
+ | Secured: Best proof of concept award (2021|22) for "digital twin of grate fired boiler and advanced control of boiler using digital twin technology".
+
+ | This is a digital model of customer's industrial boiler asset dynamically trained using it's IoT data so as to automatically generate operational recommendation for optimal operation of asset.
+
+ | This model comprises multiple machine learning models working together to simulate a real system.
