@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.19)  8 MAY 2023 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.19)  8 MAY 2023 13:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -428,13 +428,13 @@ Package rerunfilecheck Info: File `cv_main.out' has not changed.
 Here is how much of TeX's memory you used:
  11392 strings out of 478599
  176513 string characters out of 5854100
- 553620 words of memory out of 5000000
+ 553617 words of memory out of 5000000
  29058 multiletter control sequences out of 15000+600000
  442726 words of font info for 80 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  75i,5n,80p,404b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm-sc.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on PDF/cv_main.pdf (1 page, 180835 bytes).
+Output written on PDF/cv_main.pdf (1 page, 180738 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
