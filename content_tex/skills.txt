@@ -1,4 +1,4 @@
-Technical Product management
+Product management
 
 Product development
 
@@ -12,6 +12,12 @@ Agile Methodologies
 
 Product Ownership
 
-Data Analysis in Excel
-
 APIs
+
+SaaS
+
+New feature development
+
+Communication
+
+Problem Solving
