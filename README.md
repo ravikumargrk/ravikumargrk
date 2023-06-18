@@ -1,8 +1,3 @@
-<!---
-ravikumargrk/ravikumargrk is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Hello! I'm Ravi, a product enthusiast and a graduate of IIT Madras Leading the development and execution of the B2B SaaS product "Thermax EDGE Live" for the past 2+ years. 
 
-Hello ! I'm Ravi.. graduate from IIT Madras, Leading development and execution of B2B SaaS product "Thermax EDGE Live" from past 2+ years. 
-
-I want to understand what customer’s problems are and build a product that actually solves them so that it really creates a positive impact on their lives.
+I am keen on understanding what customers' problems are and building products that solve them so that it creates a positive impact on their lives.
