@@ -1,5 +1,0 @@
-Best proof of concept award (2021|22) for "digital twin of grate fired boiler and advanced control of boiler using digital twin technology".
-
- | This is a digital model of customer's industrial boiler asset dynamically trained using it's IoT data so as to automatically generate operational recommendation for optimal operation of asset.
-
- | This model comprises multiple machine learning models working together to simulate a real system.

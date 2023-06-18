@@ -1,6 +1,0 @@
-\textbf{key courses}: \href{https://www.udemy.com/certificate/UC-4aa83664-cd41-4b8e-be7c-201c642d643d/}{Data Science}, Design and Optimisation of Energy Systems
-\newline \textbf{learship roles}: Coordinator of Mechanica 2k18
-\newline | Increased the number of participants by 30\% compared to last year. Responsible for organizing and conducting events managing about 100 Participants.
-\newline \textbf{Internship @ Daimler}: 
-\newline | Worked at a Diesel Engine Durability Test Setup to study various energy flows and losses.
-\newline | Built dashboards in Power BI using data from sensors to display key performance indicators related to energy management, improving visibility and enabling data-driven decision making.
