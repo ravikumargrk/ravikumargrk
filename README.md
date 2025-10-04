@@ -1,2 +1,1 @@
-Experienced developer with a strong track record of translating business needs into successful
-products. I possess a keen ability to analyse and understand requirements. Adept at developing elegant, scalable, and maintainable data analytics solutions.
+Powered by the joy of creation, I've build something today which itself can do what we would have to do and freed us from the toil of yesterday. Fulfilled with its impact I am now transcended to an engineer.
