@@ -1,1 +1,1 @@
-Powered by the joy of creation, I've built something today which itself can do what we would have to do and freed us from the toil of yesterday. Fulfilled with its impact, I am now transcended to an engineer.
+ex-Product Manager now learning Generative AI & Data Engineering
